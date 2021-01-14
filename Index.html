@@ -11,7 +11,32 @@
 </head>
 
 <body>
+
     <div id="vue-app">
+        <!--Bag Image-->
+        <div id="bag" v-bind:class="{burst: ended}">
+
+        </div>
+
+
+
+        <!--BAg health-->
+        <div id="bag-health">
+            <div v-bind:style="{width: health + '%'}"></div>
+
+        </div>
+
+
+
+        <!--Game controls-->
+        <div id="controls">
+            <button class="punch" v-on:click="punch" v-show="!ended">Punch</button>
+            <button class="kick" v-on:click="kick" v-show="!ended">Kick</button><br><br>
+            <button class="restart" v-on:click="restart">Restart</button>
+        </div>
+
+
+        <!---->
 
 
 
